@@ -5,7 +5,7 @@ import { cardsStyles } from "./styles/styles";
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-full min-h-screen bg-[#14332F] justify center" >
+    <div className="flex flex-col w-full min-h-screen bg-[#14332F] justify center sm pt-10" >
       <div id='about' />
       <section className="z-0 flex flex-col items-center justify-center w-full px-10 md:h-screen sm:px-0">
         <div className="flex flex-col-reverse items-center justify-center w-full h-[500px] 2xl:h-[700px] pb-12 lg:flex-row ">

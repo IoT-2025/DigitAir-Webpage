@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="it" className={usedFont.className}>
       <body>
         <Navbar/>
-        <Image className="fixed z-0 w-full h-full invert opacity-10" src={vfx}/>
+        <Image className="fixed z-0 object-none w-full h-full invert opacity-10" src={vfx}/>
         <Image className="absolute z-0 w-full h-full" src={bg_anim}/>
         <div className="absolute z-0 w-full h-full bg-gradient-to-b from-transparent to-glass"/>
         {children}
