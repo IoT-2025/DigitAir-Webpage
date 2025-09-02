@@ -1,13 +1,13 @@
 import "./globals.css";
 import { Footer, Navbar } from "./components";
 
-import {Inter} from 'next/font/google'
+import {Vollkorn} from 'next/font/google'
 import { bg_anim, vfx } from "./assets";
 import Image from "next/image";
 
-const usedFont = Inter({
+const usedFont = Vollkorn({
   subsets: ['latin'],
-  weight: ['100','200','300','400','500','600','700'],
+  weight: ['400','500','600','700','800','900'],
   display: 'swap',
 })
 
