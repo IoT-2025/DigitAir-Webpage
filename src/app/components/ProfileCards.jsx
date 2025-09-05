@@ -22,11 +22,11 @@ export default function ProfileCards() {
 
   return (
 <div className="min-h-[300px] py-6 flex items-center justify-center">
-  <div className="grid w-full max-w-4xl grid-cols-1 mx-auto gap-28 lg:grid-cols-2 justify-items-center">
+  <div className="grid w-full max-w-6xl grid-cols-1 mx-auto gap-28 lg:grid-cols-2 justify-items-center">
     {profiles.map((profile) => (
       <div 
         key={profile.id}
-        className="flex items-start justify-center min-h-[250px] h-auto px-4 py-6 transition-all duration-300 w-[481px] text-secondary shadow-default-card unselectable bg-primary 2xl:text-xl rounded-2xl lg:px-6 hover:shadow-lg hover:scale-[1.01]"
+        className="flex items-start justify-center min-h-[250px] h-auto px-4 py-6 transition-all duration-300 w-[410px] text-secondary shadow-default-card unselectable bg-primary 2xl:text-xl rounded-2xl lg:px-6 hover:shadow-lg hover:scale-[1.01]"
       >
         <div className="flex flex-col justify-center w-full h-full px-3 py-5">
           <div className="space-y-3 sm:space-y-4">
