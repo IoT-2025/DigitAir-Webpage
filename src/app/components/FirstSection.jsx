@@ -40,18 +40,7 @@ const FirstSection = () => {
                     </div>            
             </section>
             
-            <div id="demo-section" className="flex flex-col items-center justify-center w-full h-[500px] gap-4 mt-23">
-                <h1 className="mb-5 text-4xl font-bold text-center text-secondary">Demo</h1>
-                <div className="w-full max-w-4xl overflow-hidden rounded-lg bg-black/50 backdrop-blur-sm">
-                    <video 
-                        className="object-cover w-full h-full"
-                        controls
-                        preload="metadata"
-                    >
-                        <source src="DemoDigitAIR.mp4" type="video/mp4" />
-                    </video>
-                </div>
-            </div>
+
 
         </>
     )

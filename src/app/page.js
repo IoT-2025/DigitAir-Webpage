@@ -10,9 +10,9 @@ const Home = () => {
     <div id='about' className="flex flex-col w-full min-h-screen bg-[#14332F] justify center sm pt-10" >
       <section className="z-0 flex flex-col items-center justify-center w-full px-10 md:h-screen sm:px-0">
         <div className="flex flex-col-reverse items-center justify-center w-full h-[500px] 2xl:h-[700px] pb-12 xl:pb-2 lg:flex-row ">
-          <Card card={contents.about}/>
+          <Card card={contents.about} />
           <div className="flex items-center justify-center w-full h-full md:w-1/2">
-              <Image src={digitair_logo} alt="logo" className="object-contain w-[500px] h-full logo-shadow" />
+            <Image src={digitair_logo} alt="logo" className="object-contain w-[500px] h-full logo-shadow" />
           </div>
         </div>
         <DemoButton />
@@ -20,16 +20,28 @@ const Home = () => {
 
       <FirstSection />
 
-      <section 
-          id='contacts' 
-          className="flex z-0 flex-col md:flex-row items-center justify-center min-h-screen md:min-h-[600px]"
-        >
-          <div className="flex flex-col justify-start h-full pb-10 w-[50%]">
-            <RepositoryButtons />
-            <h1 className="mt-16 mb-4 text-4xl font-bold text-center text-secondary">Team</h1>
-            <ProfileCards />
-
+      <section
+        id='contacts'
+        className="flex z-0 flex-col md:flex-row items-center justify-center min-h-screen md:min-h-[600px]"
+      >
+        <div className="flex flex-col justify-start h-full pb-10 w-[50%]">
+          <div id="demo-section" className="flex flex-col items-center justify-center w-full h-[500px] gap-4 mt-23">
+            <h1 className="mb-5 text-4xl font-bold text-center text-secondary">Demo</h1>
+            <div className="w-full max-w-4xl overflow-hidden rounded-lg bg-black/50 backdrop-blur-sm">
+              <video
+                className="object-cover w-full h-full"
+                controls
+                preload="metadata"
+              >
+                <source src="DemoDigitAIR.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
+          <RepositoryButtons />
+          <h1 className="mt-16 mb-4 text-4xl font-bold text-center text-secondary">Team</h1>
+          <ProfileCards />
+
+        </div>
       </section>
 
 
