@@ -1,5 +1,5 @@
 "use client"
-import { Card, DemoButton, FirstSection, ProfileCards } from "./components";
+import { Card, DemoButton, FirstSection, ProfileCards, RepositoryButtons } from "./components";
 import { contents } from "./costants";
 import { cardsStyles } from "./styles/styles";
 import Image from "next/image";
@@ -24,9 +24,11 @@ const Home = () => {
           id='contacts' 
           className="flex z-0 flex-col md:flex-row items-center justify-center min-h-screen md:min-h-[600px]"
         >
-          <div className="flex flex-col justify-start w-full h-full">
-            <h1 className="text-4xl font-bold text-white text-center mb-4">Team</h1>
+          <div className="flex flex-col justify-start h-full pb-10 w-[50%]">
+            <RepositoryButtons />
+            <h1 className="mt-16 mb-4 text-4xl font-bold text-center text-secondary">Team</h1>
             <ProfileCards />
+
           </div>
       </section>
 

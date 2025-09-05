@@ -51,10 +51,10 @@ const RepositoryButtons = () => {
     ];
 
     return (
-        <div className="w-full mb-20">
-            <div className="max-w-5xl mx-auto">
-                <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold text-secondary mb-2">
+        <div className="relative w-full mt-20">
+            <div className="mx-auto ">
+                <div className="mb-8 text-center">
+                    <h2 className="mb-2 text-3xl font-bold text-secondary">
                         Repository GitHub
                     </h2>
                     <p className="text-secondary/70">
@@ -69,10 +69,10 @@ const RepositoryButtons = () => {
                             href={repo.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="relative z-10 group flex items-center px-4 py-2 bg-primary rounded-lg hover:bg-secondary transition-all duration-300 shadow-sm hover:shadow-lg"
+                            className="relative z-10 flex items-center px-4 py-2 transition-all duration-300 rounded-lg shadow-sm group bg-primary hover:bg-secondary hover:shadow-lg"
                         >
-                            <IoLogoGithub className="w-4 h-4 text-secondary group-hover:text-primary mr-2 transition-colors duration-300" />
-                            <span className="text-md font-medium text-secondary group-hover:text-primary transition-colors duration-300">
+                            <IoLogoGithub className="w-4 h-4 mr-2 transition-colors duration-300 text-secondary group-hover:text-primary" />
+                            <span className="font-medium transition-colors duration-300 text-md text-secondary group-hover:text-primary">
                                 {repo.name}
                             </span>
                         </a>

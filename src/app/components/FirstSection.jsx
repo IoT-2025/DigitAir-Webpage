@@ -21,7 +21,6 @@ const FirstSection = () => {
                 </div>
                 <CardGrid/>
             </section>
-            <RepositoryButtons />
             <section id='tecnologie' className="z-0 flex flex-col gap-[200px] md:gap-0 items-center justify-center w-full h-full px-10 pb-12 sm:px-0 scroll-mt-[125px]">
                 <h1 className={titlesStyles}>Hardware</h1>
                 <div className="flex flex-col-reverse items-center justify-center w-full 2xl:h-full h-[500px] pb-12 lg:flex-row ">
@@ -42,10 +41,10 @@ const FirstSection = () => {
             </section>
             
             <div id="demo-section" className="flex flex-col items-center justify-center w-full h-[500px] gap-4 mt-23">
-                <h1 className="text-4xl font-bold text-white text-center mb-5">Demo</h1>
-                <div className="w-full max-w-4xl bg-black/50 backdrop-blur-sm rounded-lg overflow-hidden">
+                <h1 className="mb-5 text-4xl font-bold text-center text-secondary">Demo</h1>
+                <div className="w-full max-w-4xl overflow-hidden rounded-lg bg-black/50 backdrop-blur-sm">
                     <video 
-                        className="w-full h-full object-cover"
+                        className="object-cover w-full h-full"
                         controls
                         preload="metadata"
                     >
