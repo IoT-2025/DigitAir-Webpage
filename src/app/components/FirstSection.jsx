@@ -16,7 +16,7 @@ const FirstSection = () => {
                 <div className="flex flex-col-reverse items-center justify-center gap-16 w-full 2xl:h-full h-[500px] lg:flex-row ">
                     <Card card={contents.architettura}/>
                     <div className={`flex items-center justify-center w-1/2 h-full bg-glass/60 ${homeCardStyles}`}>
-                        <Image src={architettura} alt="architettura" className="object-contain w-full h-full" />
+                        <Image priority placeholder='blur' src={architettura} alt="architettura" className="object-contain w-full h-full" />
                     </div>
                 </div>
                 <CardGrid/>
