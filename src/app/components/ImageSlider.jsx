@@ -81,6 +81,7 @@ const ImageSlider = () => {
         <div className="aspect-[1800/928] w-full 2xl:h-[460px] lg:h-[390px] overflow-hidden">
           <Image
             blurDataURL={images[currentIndex].blur} 
+            blur
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
             fill
