@@ -78,7 +78,7 @@ const ImageSlider = () => {
     <div className="max-w-4xl p-4 mt-10">
       <div className="relative overflow-hidden bg-gray-900 shadow-2xl rounded-xl">
         
-        <div className="aspect-[1800/928] w-full 2xl:h-[470px] lg:h-[400px] overflow-hidden">
+        <div className="aspect-[1800/928] w-full 2xl:h-[460px] lg:h-[390px] overflow-hidden">
           <Image
             blurDataURL={images[currentIndex].blur} 
             src={images[currentIndex].src}
