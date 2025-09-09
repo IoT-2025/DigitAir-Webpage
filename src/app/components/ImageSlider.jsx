@@ -1,46 +1,55 @@
 "use client";
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const ImageSlider = () => {
   const images = [
     {
-      src: "SliderImages/registrazione.png",
+      src: "/SliderImages/registrazione.png",
+      blur: "/SliderImages/blur/registrazione.png",
       alt: "registrazione",
       caption: "Interfaccia di registrazione utente"
     },
     {
-      src: "SliderImages/visualizzazione_mappa.png",
+      src: "/SliderImages/visualizzazione_mappa.png",
+      blur: "/SliderImages/blur/visualizzazione_mappa.png",
       alt: "mappa inquinanti",
       caption: "Interfaccia di visualizzazione dei dati ambientali su mappa"
     },
     {
-      src: "SliderImages/simulazione_alberi.png",
+      src: "/SliderImages/simulazione_alberi.png",
+      blur: "/SliderImages/blur/simulazione_alberi.png",
       alt: "simulazione alberi",
       caption: "Simulazione della compensazione ambientale tramite alberi"
     },
     {
-      src: "SliderImages/risultato_alberi.jpeg",
+      src: "/SliderImages/risultato_alberi.jpeg",
+      blur: "/SliderImages/blur/risultato_alberi.jpeg",
       alt: "risultato simulazione alberi",
       caption: "Risultato della precedente simulazione"
     },
     {
-      src: "SliderImages/simulazione_health.png",
+      src: "/SliderImages/simulazione_health.png",
+      blur: "/SliderImages/blur/simulazione_health.png",
       alt: "simulazione health",
       caption: "Simulazione dell’impatto della qualità dell’aria sulla salute"
     },
     {
-      src: "SliderImages/visualizzazione_grafici_inquinanti.png",
+      src: "/SliderImages/visualizzazione_grafici_inquinanti.png",
+      blur: "/SliderImages/blur/visualizzazione_grafici_inquinanti.png",
       alt: "grafici",
       caption: "Interfaccia di visualizzazione dei grafici"
     },
     {
-      src: "SliderImages/admin_dashboard.png",
+      src: "/SliderImages/admin_dashboard.png",
+      blur: "/SliderImages/blur/admin_dashboard.png",
       alt: "Dashboard microservizi",
       caption: "Dashboard amministrativa (microservizi)"
     },
     {
-      src: "SliderImages/admin_dashboard_2.png",
+      src: "/SliderImages/admin_dashboard_2.png",
+      blur: "/SliderImages/blur/admin_dashboard_2.png",
       alt: "Montagne",
       caption: "Gestione delle mail convenzionate"
     }
@@ -69,10 +78,12 @@ const ImageSlider = () => {
     <div className="max-w-4xl p-4 mt-10">
       <div className="relative overflow-hidden bg-gray-900 shadow-2xl rounded-xl">
         
-        <div className="relative aspect-[1800/928] w-full overflow-hidden">
-          <img 
+        <div className="aspect-[1800/928] w-full 2xl:h-[470px] lg:h-[400px] overflow-hidden">
+          <Image
+            blurDataURL={images[currentIndex].blur} 
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
+            fill
             className="object-cover w-full h-full transition-all duration-500 ease-in-out"
           />
           
