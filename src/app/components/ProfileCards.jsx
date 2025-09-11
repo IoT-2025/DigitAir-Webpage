@@ -26,7 +26,7 @@ export default function ProfileCards() {
     {profiles.map((profile) => (
       <div 
         key={profile.id}
-        className="flex items-start justify-center min-h-[250px] h-auto px-4 py-6 transition-all duration-300 w-[410px] text-secondary shadow-default-card unselectable bg-primary 2xl:text-xl rounded-2xl lg:px-6 hover:shadow-lg hover:scale-[1.01]"
+        className="flex items-start justify-center min-h-[250px] h-auto px-4 py-6 transition-all duration-300 lg:w-[410px] sm:w-[300px] text-secondary shadow-default-card unselectable bg-primary 2xl:text-xl rounded-2xl lg:px-6 hover:shadow-lg hover:scale-[1.01]"
       >
         <div className="flex flex-col justify-center w-full h-full px-3 py-5">
           <div className="space-y-3 sm:space-y-4">

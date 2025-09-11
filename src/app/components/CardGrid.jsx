@@ -33,7 +33,7 @@ const CardGrid = () => {
     };
 
     return (
-    <div className="container px-6 mx-auto mb-10">
+    <div className="container px-6 mx-auto mb-10 lg:pt-0 pt-32">
         <div className="grid grid-cols-1 grid-rows-2 gap-6 xl:pt-20 md:grid-cols-2 lg:grid-cols-4">
         {cardData.map((card, index) => (
             <div 
