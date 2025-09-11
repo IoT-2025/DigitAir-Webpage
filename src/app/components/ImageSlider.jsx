@@ -80,14 +80,14 @@ const ImageSlider = () => {
         
         <div className="aspect-[1800/928] w-full 2xl:h-[460px] lg:h-[390px] overflow-hidden">
           <Image
-            blurDataURL={images[currentIndex].blur} 
-            blur
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
             fill
             className="object-cover w-full h-full transition-all duration-500 ease-in-out"
+            placeholder="blur"
+            blurDataURL={images[currentIndex].blur}
           />
-          
+
           <div className="absolute inset-0 bg-black/10"></div>
         </div>
 
